@@ -1,0 +1,10 @@
+.c-leftAnimation {
+    animation: leftSlide .8s linear;
+}
+
+@keyframes leftSlide {
+    0% {
+        transform: translateX(220px)
+    }
+}
+

@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+}
+main {
+    overflow: hidden;
+}
+/* =================================================== */
+#header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    background-color: aliceblue;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    z-index: 22;
+} 
+nav .logo {
+    font-size: 1.2rem;
+    color: rgb(169, 170, 171);
+}
+nav  .logo span {
+    position: relative;
+    left: -6px;
+    font-weight: 900;
+    color: #fff;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 50px;
+    background-color: #0e0d0d;
+    height: 50px;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li a {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#header .acount {
+    display: flex;
+    gap: 0 30px;
+    align-items: center;
+    margin-right: 40px;
+}
+#header .acount a {
+    color: #fff;
+}
+#header nav .acount a:nth-of-type(2) {
+    border: solid 1px;
+    padding: 10px 20px;
+}
+#header .left {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    position: relative;
+    background-color: #0e0d0d;
+}
+#header .left .wrp {
+    z-index: 1;
+    background-image: url(..//icons/grid.png);
+    background-repeat: repeat;
+    background-size: 20%;
+}
+#header .left::after {
+    background-image: url(..//icons/map.png);
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .1;
+    background-size: 150%;
+    background-position: center;
+}
+#header .left h4 {
+    color: rgb(174, 174, 174);
+    font-weight: 100;
+    font-size: 15px;
+}
+#header .left h1 {
+    line-height: 1.6;
+}
+#header .left h1 span:nth-of-type(1) {
+    color: #838383;
+    font-weight: 100;
+    font-size: 4rem;
+}
+#header .left h1 span:nth-of-type(2) {
+    color: #d1d1d1;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#header .left h1 span:nth-of-type(3) {
+    color: #efefef;
+    font-weight: 900;
+    font-size: 2rem;
+}
+#header .left p {
+    color: rgb(162, 162, 162);
+    line-height: 1.5;
+    margin: 20px 0;
+}
+#header .left a {
+    width: 180px;
+    color: #333;
+    background: #fff;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+#header .left a i {
+    font-size: 17px;
+    padding: 0 10px;
+}
+#header .right {
+    background-color: #454549;
+    width: 55%;
+    height: 100%;
+} 
+/* =================================================== */
+#carCarocile {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(..//imgs/c0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+#carCarocile::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000000b2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* ======================================== */
+#carCarocile .carosile {
+    width: 60%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#carCarocile .carosile div {
+    min-width: 280px;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: #fff;
+    overflow: hidden;
+}
+#carCarocile .carosile div img {
+    width: 100%;
+    height: 100%;
+}
+#carCarocile .btns {
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    top: 12%;
+    left: 40%;
+    z-index: 28732;
+}
+
+#carCarocile .btns button {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    margin: 0 20px;
+    color: #e6a100;
+    border-radius: 50%;
+    border: .1px solid;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#carCarocile .carosile img {
+    width: 100%;
+    height: 100%;
+}
+/* ======================================== */
+
+#carCarocile .info {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.745);
+    width: 100%;
+    display: flex;
+    color: #fff;
+    height: 100px;
+    padding-left: 40px;
+}
+
+#carCarocile .info h5,
+#carCarocile .info p {
+    padding: 5px;
+}
+
+#carCarocile .info > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#carCarocile .info .offers {
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    align-items: center;
+}
+
+#carCarocile .info .offers i {
+    color: #e6a100;
+}
+
+#carCarocile .info .offers a {
+    color: #333;
+    text-decoration: none;
+}
+/* ======================================== */
+
+#carCarocile .content {
+    padding-left: 40px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 300px;
+}
+#carCarocile .content h1 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    font-weight: 900;
+}
+
+#carCarocile .content h4 {
+    color: #F08025;
+}
+#carCarocile .content a {
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #F08025;
+    padding: 15px 40px;
+    font-size: 14px;
+    font-weight: 800;
+}
+#carCarocile .content a i {
+    color: #F08025;
+}
+/* ======================================== */
+#us {
+    padding: 0 5%;
+}
+#us .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+}
+
+#us .circle .done {
+    position: relative;
+    width: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    z-index: 2;
+    transform: scale(1.5);
+} 
+#us .circle .done i {
+    font-size: 12px;
+}
+#us .circle  .done::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #fd4a4a;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+#us .circle  .done::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #fd4a4a;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    z-index: -1;
+}
+#us article {
+    width: 300px;
+    border: 1px solid #d4d4d4;
+    text-align: center;
+    position: relative;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 6px;
+}
+#us article p {
+    line-height: 1.5;
+}
+#us article h1 {
+    padding: 10px;
+}
+#us .circle {
+    position: absolute;
+    top: -40px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border-bottom: 1px solid #d4d4d4;
+    border-right: 1px solid d4d4d4;
+    background: #fff;
+}
+/* ========================== */
+
+footer {
+    display: flex;
+    height: 120px;
+    background-color: #181818;
+    position: relative;
+    align-items: center;
+    padding: 0 5%;
+    background-image: url(..//icons/grid.png);
+    background-repeat: repeat;
+    background-size: 2%;
+    background-position: center;
+}
+.topPage {
+    color: #fff;
+    background-color: #181818;
+    width: 56px;
+    height: 70px;
+    position: absolute;
+    right: 0;
+    top: -70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+footer .content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+footer .list {
+    display: flex;
+    width: 80%;
+    border-bottom: 1px solid #fff;
+    height: 40px;
+    margin-left: 50px;
+}
+footer .list ul {
+    display: flex;
+    gap: 20px;
+    width: 500px;
+}
+
+footer .list ul li a {
+    color: #fff;
+    font-size: 12px;
+
+}
+
+footer .cinfo {
+    display: flex;
+    color: #fff;
+    gap: 10px;
+    margin: 0 80px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+footer img {
+    width: 300px;
+    position: absolute;
+    right: -110px;
+}
+footer .logo {
+    padding: 0 20px;
+    background: #fff;
+    height: 120px;
+    position: relative;
+    top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #838383;
+}
+footer .logo span { 
+    color: #333;
+    font-weight: 900;
+}
+/* ======================================== */
+
+.s-offer {
+    height: 100vh;
+    position: relative;
+    background: url(..//imgs/7seriesbmwseriesexterior.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.s-offer .content {
+    height: 100%;
+    width: 100%;
+    background-color: #00000044;
+    z-index: 22;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+.bar {
+    height: fit-content;
+    background: transparent;
+    color: #333;
+    width: fit-content;
+    height: 50px;
+    overflow: hidden;
+    transition: 1s linear;
+}
+.bar .rows {
+    width: 400px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: rgb(255, 255, 255);
+}
+.bar .rows i {
+    color: #fff;
+}
+.bar .rows:nth-child(even) {
+    background-color: #e5eeed;
+}
+.bar .rows:nth-of-type(1) {
+    border-top: #000 1px solid;
+    background-color: rgba(0, 0, 0, 0.787);
+    color: #fff;
+    cursor: pointer;
+}
+.bar .rows:nth-of-type(1):hover {
+    background-color: rgba(0, 0, 0, 0.807);
+}
+
+.car-name h1{
+    color: #ffffff;
+    font-size: 2.8rem;
+    font-weight: 300;
+    background-color: #0000009d;
+    padding: 5px 20px;
+}
+
+.car-name p {
+    color: #bababa;
+    background-color: #0000009d;
+    font-weight: 700;
+    padding: 5px 20px;
+}
+/* ================================== */
+#p-auto {
+    padding: 80px 0;
+}
+#p-auto .title {
+    padding: 50px 0;
+    text-align: center;
+}
+#p-auto .title h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#p-auto .title p {
+    color: #777;
+    font-weight: 600;
+}
+#p-auto .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+#p-auto .content article{
+    width: 300px;
+}
+#p-auto .content article .img {
+    width: 100%;
+    height: 250px;
+}
+#p-auto .content article .img img {
+    width: 100%;
+    height: 100%;
+}
+#p-auto .content article .price {
+    display: flex;
+    color: #fff;
+}
+
+
+#p-auto .content article .price div:nth-of-type(1){
+    background: #fc4444;
+    width: 50%;
+    padding-left: 10px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#p-auto .content article .price div:nth-of-type(1) p {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+#p-auto .content article .price div:nth-of-type(1) h1 {
+    font-weight: 700;
+    font-size: 30px;
+}
+#p-auto .content article .price div:nth-of-type(2){
+    background: #111111;
+    width: 50%;
+    height: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#p-auto .content article .price div:nth-of-type(2) i {
+    padding: 0 8px;
+}
+#p-auto .content article .info 
+{
+    padding-left: 45px;
+}
+#p-auto .content article .info h1 {
+    font-size: 1.4rem;
+    color: #444;
+    font-weight: 800;
+    padding: 8px 0;
+}
+
+#p-auto .content article .info p {
+    font-size: 13px;
+    color: rgb(147, 147, 147);
+}
+
+/* ===================================== */
+#rev {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(30, 30, 30);
+}
+#rev .imgs {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(47, 47, 47);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#rev .imgs .im {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    filter: gray;
+    filter: grayscale(1); 
+}
+#rev .imgs .im img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+#rev .imgs .imActive {
+    transform: scale(1.5);
+    filter: grayscale(0); 
+}
+
+#rev .text {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#rev .text h1 {
+    width: 70%;
+    padding: 20px 0;
+    color: rgb(162, 162, 162);
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+#rev .text p {
+    width: 80%;
+    line-height: 1.8;
+    font-weight: 200;
+    color: rgb(201, 201, 201);
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* =================================================== */
+.animateAll {
+    -webkit-animation: animateAll .8s linear;
+    animation: animateAll .8s linear;
+    display: block;
+    animation-delay: .5s
+}
+
+.animateH1,.animateIMG {
+    -webkit-animation: animateH1 .8s linear;
+    animation: animateH1 .7s linear;
+    position: relative
+}
+
+.animateIMG {
+    -webkit-animation: animateIMG .7s linear;
+    animation: animateIMG .7s linear
+}
+@keyframes animateAll {
+    0% {
+        -webkit-transform: scale(.8);
+        transform: translateX(-80%)
+    }
+}
+
+@keyframes animateH1 {
+    0% {
+        transform: translateX(80%)
+    }
+}
+@keyframes animateIMG {
+    0% {
+        transform: scale(.5)
+    }
+} 
+html {
+	scroll-behavior: smooth;
+}
